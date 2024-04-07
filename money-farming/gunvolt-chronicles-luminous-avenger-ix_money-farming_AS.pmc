@@ -1,0 +1,29 @@
+﻿[PMC Globals]|None||
+[PMC Code v5.4.1]|F3||1|Window,2,Fast,0,1,Input,-1,-1,1|1|Macro1
+Context=None|
+Groups=Start:1
+1|If Window Active|Chiaki  Stream|1|0|If_Statement|||||1|
+2|[LoopStart]|LoopStart|0|0|Loop|||||3|
+3|Continue, Continue, FoundX, FoundY, 0|13, 615, 228, 754, *120 .\Screen_20240407020334.png|5|100|ImageSearch|UntilFound|Window|if HUD found, implies loading finished||5|
+4|If Image/Pixel Found||1|0|If_Statement|||||12|
+5|[|{[ Down}|1|1500|Send|||towards left for 1.5s||14|
+6|m|{m Down}|1|200|Send|||jump on the platform||16|
+7|m|{m Up}|1|200|Send|||||18|
+8|[|{[ Down}|1|700|Send|||continue left for 1.5s||20|
+9|m|{m Down}|1|200|Send|||jump on the money box level||22|
+10|m|{m Up}|1|200|Send|||||24|
+11|[|{[ Up}|1|0|Send|||stop left||26|
+12|3|{3 Down}|1|100|Send|||EX Weapon||27|
+13|3|{3 Up}|1|1500|Send|||||29|
+14|o|{o Down}|1|100|Send|||option menu||31|
+15|o|{o Up}|1|500|Send|||||33|
+16|i|{i Down}|1|200|Send|||retry||35|
+17|i|{i Up}|1|0|Send|||||37|
+18|k|{k Down}|1|100|Send|||double circle||38|
+19|k|{k Up}|1|100|Send|||||40|
+20|k|{k Down}|1|100|Send|||||42|
+21|k|{k Up}|1|100|Send|||||44|
+22|[End If]|EndIf|1|0|If_Statement|||||46|
+23|[LoopEnd]|LoopEnd|1|0|Loop|||||47|
+24|[End If]|EndIf|1|0|If_Statement|||||48|
+
